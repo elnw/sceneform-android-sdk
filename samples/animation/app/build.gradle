@@ -8,6 +8,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -33,13 +34,7 @@ dependencies {
 
 apply plugin: 'com.google.ar.sceneform.plugin'
 
-sceneform.asset('sampledata/models/andy_dance.fbx',
+sceneform.asset('sampledata/models/globo.fbx',
         'default',
-        'sampledata/models/andy_dance.sfa',
-        'src/main/res/raw/andy_dance',
-        ['sampledata/models/andy_wave_r.fbx', 'sampledata/models/andy_wave_l.fbx'])
-
-sceneform.asset('sampledata/models/baseball-cap.gltf',
-        'default',
-        'sampledata/models/baseball-cap.sfa',
-        'src/main/res/raw/baseball_cap')
+        'sampledata/models/globo.sfa',
+        'src/main/assets/globo')
